@@ -1,158 +1,141 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <title>Circuito de Karts y Testing de Vehículos</title>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS v5.3.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Circuito de Karts</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
+<body class="bg-light text-dark">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Circuito de Karts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container my-5">
+
+    <section class="text-center mb-5">
+        <h1>¡Bienvenido al Circuito de Karts!</h1>
+        <p class="lead">Experimenta la emoción del karting y el testing de vehículos de alto rendimiento.</p>
+        <img src="img/kart-optimizada.jpg" alt="Karts en circuito profesional" class="img-fluid my-3">
+    </section>
+
+    <section class="row mb-5">
+        <div class="col-md-6">
+
+            <div class="card mb-3 border-dark">
+                <div class="card-header bg-secondary text-white">Testing</div>
+                <div class="card-body bg-dark text-white">
+                    <h2 class="card-title h5">Testing de Vehículos</h2>
+                    <p>Prueba tus vehículos en nuestro circuito profesional.</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
                 </div>
             </div>
-        </nav>
-    </header>
 
-    <main class="container my-5">
-        <section class="text-center mb-5">
-            <h1>¡Bienvenido al Circuito de Karts!</h1>
-            <p class="lead">Experimenta la emoción del karting y el testing de vehículos de alto rendimiento.</p>
-            <br>
-            <img src="img/kart-optimizada.jpg" alt="Imagen principal de karts" class="img-fluid main-image" />
-            <br>
-        </section>
+            <div class="card mb-3 border-dark">
+                <div class="card-header bg-primary text-white">Karts</div>
+                <div class="card-body bg-dark text-white">
+                    <h2 class="card-title h5">Carreras de Karts</h2>
+                    <p>Únete a emocionantes carreras en nuestro circuito.</p>
+                    <a href="#" class="btn btn-secondary">Reservar</a>
+                </div>
+            </div>
 
-        <section class="row mb-5">
+            <div class="card mb-3 border-dark">
+                <div class="card-header bg-secondary text-white">Eventos</div>
+                <div class="card-body bg-dark text-white">
+                    <h2 class="card-title h5">Eventos Especiales</h2>
+                    <p>Organizamos eventos para empresas y particulares.</p>
+                    <a href="#" class="btn btn-primary">Contactar</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6 d-flex align-items-center">
+            <img src="img/testing-optimizada.jpg" alt="Vehículo realizando pruebas en pista" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="mb-5 text-center">
+        <h2>Audio de bienvenida</h2>
+        <audio controls>
+            <source src="media/audio.ogg" type="audio/ogg">
+            <source src="media/audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio. <a href="media/audio.mp3">Descargar audio</a>
+        </audio>
+    </section>
+
+    <section class="mb-5">
+        <h2>Vídeos</h2>
+
+        <div class="row">
             <div class="col-md-6">
-                <div class="card mb-3 border-dark">
-                    <div class="card-header bg-secondary">Testing</div>
-                    <div class="card-body bg-dark">
-                        <h5 class="card-title">Testing de Vehículos</h5>
-                        <p class="card-text">Prueba tus vehículos en nuestro circuito profesional.</p>
-                        <a href="#" class="btn btn-primary">Más info</a>
+                <div class="card border-dark">
+                    <div class="card-header bg-secondary text-white">
+                        <h3 class="h5">Vídeo con poster</h3>
                     </div>
-                </div>
-                <div class="card mb-3 border-dark">
-                    <div class="card-header bg-blue">Karts</div>
-                    <div class="card-body bg-dark">
-                        <h5 class="card-title">Carreras de Karts</h5>
-                        <p class="card-text">Únete a emocionantes carreras en nuestro circuito.</p>
-                        <a href="#" class="btn btn-secondary">Reservar</a>
-                    </div>
-                </div>
-                <div class="card mb-3 border-dark">
-                    <div class="card-header bg-secondary">Eventos</div>
-                    <div class="card-body bg-dark">
-                        <h5 class="card-title">Eventos Especiales</h5>
-                        <p class="card-text">Organizamos eventos para empresas y particulares.</p>
-                        <a href="#" class="btn btn-primary">Contactar</a>
+                    <div class="card-body bg-dark text-white text-center">
+                        <video controls poster="img/kart-optimizada.jpg" class="w-100">
+                            <source src="media/video.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <img src="img/testing-optimizada.jpg" alt="Testing de vehículos" class="img-fluid">
-            </div>
-        </section>
 
-        <div class="mb-5 text-center">
-            <h2>Audio de Bienvenida</h2>
-            <audio controls>
-                <source src="media/audio.ogg" type="audio/ogg">
-                <source src="media/audio.mp3" type="audio/mpeg">
-                Tu navegador no soporta el elemento audio. <a href="media/audio.mp3">Descargar audio</a>
-            </audio>
-            <p>Haga click <a href="media/audio.mp3" download width="500px" preload="metadata">aqui</a> para descargar el
-                audio</p>
+            <div class="col-md-6">
+                <div class="card border-dark">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5">Clip</h3>
+                    </div>
+                    <div class="card-body bg-dark text-white text-center">
+                        <video controls class="w-100">
+                            <source src="media/video.mp4#t=5,8" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <section class="mb-5">
-            <h2>Vídeos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card border-dark">
-                        <div class="card-header bg-secondary">
-                            <h3>Vídeo con poster</h3>
-                        </div>
-                        <div class="card-body text-center bg-dark">
-                            <video controls poster="img/kart-optimizada.jpg" style="max-width: 100%; height: auto;">
-                                <source src="media/video.mp4" type="video/mp4">
-                                Tu navegador no soporta el elemento video.
-                            </video>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card border-dark">
-                        <div class="card-header bg-blue">
-                            <h3>Clip</h3>
-                        </div>
-                        <div class="card-body text-center bg-dark">
-                            <video controls style="max-width: 100%; height: auto;">
-                                <source src="media/video.mp4#t=5,8" type="video/mp4">
-                                Tu navegador no soporta el elemento video.
-                            </video>
-                        </div>
-                    </div>
-                </div>
+        <div class="text-center mt-4">
+            <h2 class="h4">Notas</h2>
+            <div contenteditable="true" class="border p-3 bg-white text-dark">
+                Escribe tus notas aquí...
             </div>
-            <div class="text-center mt-3">
-                <h4>Notas</h4>
-                <div contenteditable="true" class="notes-area">Escribe tus notas aquí...</div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-red text-center py-3">
-        <div class="container">
-            <a href="https://example.com">Creative commons tutorial</a> © 2025 by <a
-                href="https://example.com">Alejandro
-                Caparrós</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
-                4.0</a>
-            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""
-                style="max-width: 1em;max-height:1em;margin-left: .2em;">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""
-                style="max-width: 1em;max-height:1em;margin-left: .2em;">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""
-                style="max-width: 1em;max-height:1em;margin-left: .2em;">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""
-                style="max-width: 1em;max-height:1em;margin-left: .2em;">
         </div>
-    </footer>
+    </section>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+</main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        © 2025 Alejandro Caparrós · Licencia CC BY-NC-SA 4.0
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
-
 </html>
